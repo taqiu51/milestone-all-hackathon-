@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqi's Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <fieldset >
+
+    <div class="form-container">
+        <h1>Taqi's Resume Form</h1>
+        <form id="resumeForm">
+            <label for="name">
+                <i class="fas fa-user"></i> Name:
+                <input type="text" id="name" name="name" required>
+            </label>
+            <label for="email">
+                <i class="fas fa-envelope"></i> Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="education">
+                <i class="fas fa-graduation-cap"></i> Education:
+                <input type="text" id="education" name="education" required>
+            </label>
+            <label for="experience">
+                <i class="fas fa-briefcase"></i> Work Experience:
+                <input type="text" id="experience" name="experience" required>
+            </label>
+            <label for="skills">
+                <i class="fas fa-cogs"></i> Skills:
+                <input type="text" id="skills" name="skills">
+                <button type="button" id="toggleSkills">Show/Hide Skills</button>
+            </label>
+            <label for="profilePic">
+                <i class="fas fa-camera"></i> Profile Picture:
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </label>
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+</fieldset>
+</body>
+</html>
